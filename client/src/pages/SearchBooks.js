@@ -71,7 +71,7 @@ class SearchBooks extends Component {
       return (
           <Container fluid>
               <Jumbotron>
-                <h1 className="text-white">Google Books API</h1>
+                <h1 className="text-white">React Based Google Books Search</h1>
                 <h3 className="text-white">Search for books and save your favorites!</h3>
               </Jumbotron>
               <Container>
@@ -91,8 +91,6 @@ class SearchBooks extends Component {
           </Container>
       )
   }
-
-
 }
 
 export default SearchBooks

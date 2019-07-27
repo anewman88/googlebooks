@@ -31,13 +31,13 @@ class SaveBook extends Component {
         return (
             <Container fluid className="container">
                 <Jumbotron>
-                    <h1>React Google Books Search</h1>
-                    <h3>These are your favorite saved books</h3>
+                    <h1 className="text-white">React Based Google Books Search</h1>
+                    <h3 className="text-white">These are your favorite saved books!</h3>
                     <hr/>
                 </Jumbotron>
 
                 <Container>
-                    <SavedResult savedBooks={this.state.savedBooks} handleDeleteButton={this.handleDeleteButton} />
+                    <SavedResult savedBooksList={this.state.savedBooksList} handleDeleteButton={this.handleDeleteButton} />
                 </Container>
             </Container>
         )
