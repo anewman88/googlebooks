@@ -34,11 +34,8 @@ class SaveBook extends Component {
                     <h1>React Google Books Search</h1>
                     <h3>These are your favorite saved books</h3>
                     <hr/>
-                    <p className="lead">
-                        <Link className="btn btn-default btn-lg" to="/" role="button">New Search</Link>
-                        <Link className="btn btn-default btn-lg" to="/saved" role="button">Saved Books</Link>
-                    </p>
                 </Jumbotron>
+
                 <Container>
                     <SavedResult savedBooks={this.state.savedBooks} handleDeleteButton={this.handleDeleteButton} />
                 </Container>
@@ -46,7 +43,5 @@ class SaveBook extends Component {
         )
     }
 }
-
-
 
 export default SaveBook 
