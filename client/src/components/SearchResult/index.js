@@ -36,7 +36,7 @@ const SearchResult = props => {
                                                     </a>
                                                 </Col>
                                                 <Col size="2">
-                                                    <button className="saveBook btn btn-info" id={book.id} onClick={(event) => props.handleSavedButton(event)}>
+                                                    <button className="saveBook btn btn-info" id={book.id} onClick={(event) => props.handleSaveButton(event)}>
                                                         Save Book
                                                     </button>
                                                 </Col>
