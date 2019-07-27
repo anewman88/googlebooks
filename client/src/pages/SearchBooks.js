@@ -1,9 +1,9 @@
 import React, { Component } from "react";
+import API from "../utils/API";
 import Jumbotron from "../components/Jumbotron";
 import { Col, Row, Container } from "../components/Grid";
 import SearchForm from "../components/SearchForm";
 import SearchResult from "../components/SearchResult"
-import API from "../utils/API";
 
 const DebugOn = true;
 
@@ -24,8 +24,10 @@ class SearchBooks extends Component {
   //function to control the submit button of the search form 
   handleFormSubmit = event => {
       event.preventDefault();
+      if (DebugOn) console.log ("Searching for " + this.state.search);
+
       // once it clicks it connects to the google book api with the search value
-      API.getGoogleSearchBooks(this.state.search)
+      API.getSearchGoogleBooks(this.state.search)
           .then(res => {
               if (res.data.items === "error") {
                   throw new Error(res.data.items);
@@ -68,7 +70,8 @@ class SearchBooks extends Component {
       return (
           <Container fluid>
               <Jumbotron>
-                  <h1 className="text-white">Find Your Favorite Books with GoogleBook API</h1>
+                <h1 className="text-white">Google Books API</h1>
+                <h3 className="text-white">Search for books and save your favorites!</h3>
               </Jumbotron>
               <Container>
                   <Row>

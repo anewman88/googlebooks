@@ -28,26 +28,28 @@ const SearchResult = props => {
                                         {/* col-9 show information of the book */}
                                         <Col size="9" className="bookInfo">
                                             <Row>
-                                                <h3 className="bookTitle">{book.title}</h3>
+                                                <Col size="10">
+                                                    <a className="book" href={book.link} target="_blank" class="text-info">
+                                                        <div className="book-title white-text">
+                                                                <h3>{book.title}</h3>
+                                                            </div>
+                                                    </a>
+                                                </Col>
+                                                <Col size="2">
+                                                    <button className="saveBook btn btn-info" id={book.id} onClick={(event) => props.handleSavedButton(event)}>
+                                                        Save Book
+                                                    </button>
+                                                </Col>
                                             </Row>
                                             <Row>
-                                                <h4 className="bookAuthor">{book.author}</h4>
+                                                <Col size="4">
+                                                    <h5 className="bookAuthor">Author: {book.author}</h5>
+                                                </Col>
                                             </Row>
                                             <Row>
                                                 <p className="bookDescription">{book.description}</p>
                                             </Row>
                                         </Col>
-                                    </Row>
-                                    <br></br>
-                                    <Row className="buttonDiv ">
-                                        <button className="saveBook btn btn-primary" id={book.id} onClick={(event) => props.handleSavedButton(event)}>
-                                            Save Book
-                                        </button>
-                                        <a href={book.link} target="_blank">
-                                            <button className="viewBook btn btn-success">
-                                                View Book
-                                        </button>
-                                        </a>
                                     </Row>
                                 </li>
                             );

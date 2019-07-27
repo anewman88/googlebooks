@@ -1,0 +1,8 @@
+.jumbotron {
+	background-image: url("library1.jpg");
+    background-size: cover;
+    /* background-repeat: repeat; */
+    background-position: center;
+	color: grey;
+	border: 10px ridge rgb(0, 0, 0);
+}

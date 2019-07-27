@@ -1,23 +1,30 @@
 import React from "react";
+import {Row, Col} from "../Grid"
 //import "./style.css";
 
 const SearchForm = props => {
   return (
       <form>
-          <div className="form-group">
-              <label className="BookSearchLabel"><h3>Search For Book</h3></label>
+          <Row>
+              <label className="BookSearchLabel"><h3>Search For A Book</h3></label>
               <br></br>
-              <input className="col-12 form-control"
-                  value={props.search}
-                  type="text"
-                  name="searchBook"
-                  placeholder="Enter Book's Name"
-                  onChange={props.handleInputChange}
-              />
-          </div>
-          <button type="submit" className="submitBtn btn btn-primary" onClick={props.handleFormSubmit}>
-              Submit
-          </button>
+              <Col size="11">
+                <div className="form-group">
+                    <input className="col-12 form-control"
+                        value={props.search}
+                        type="text"
+                        name="searchBook"
+                        placeholder="Enter a book title"
+                        onChange={props.handleInputChange}
+                    />
+                </div>
+              </Col>
+              <Col size="1">
+                <button type="submit" className="submitBtn btn btn-primary" onClick={props.handleFormSubmit}>
+                    Submit
+                </button>
+              </Col>
+          </Row>
       </form>
   )
 }
