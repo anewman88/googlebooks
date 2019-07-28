@@ -9,7 +9,7 @@ SMU Programming Bootcamp Spring 2019
 
 The purpose of this assignment is to create a React-based Google Books Search app. This assignment uses React components, works with helper/util functions, and utilizes React lifecycle methods to query and display books based on user searches. It also uses Node, Express and MongoDB so that users can save books to review or purchase later.
 
-My working app can be found on Heroku [here](https://warm-earth-75204.herokuapp.com/)
+My working app can be found on Heroku [here](https://enigmatic-headland-97665.herokuapp.com/)
 
 ### Using the App
 The Home/Search Page allows the user to enter the title of a book to search for using Google Books. A list of books, including author, a book description, and a book image is displayed. The user has the option of saving a book in a database by clicking the 'Save' button. Or the user can view more detailed information about a book by clicking it's title.
@@ -33,7 +33,7 @@ There are two ways to start/run the app.
 
 ### Running the app on your computer from Heroku
 
-* The working app can be found on Heroku [here](https://warm-earth-75204.herokuapp.com/)
+* The working app can be found on Heroku [here](https://enigmatic-headland-97665.herokuapp.com/)
 
 ### Running the app on your computer from a Bash Window
 
